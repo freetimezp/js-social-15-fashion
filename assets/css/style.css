@@ -265,7 +265,7 @@ header {
 }
 
 .reset.active {
-    transform: rotateZ(100deg);
+    transform: rotateZ(180deg);
 }
 
 .reset ion-icon {
