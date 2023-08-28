@@ -347,3 +347,48 @@ header {
     left: 100px;
 }
 
+main {
+    width: 100%;
+    padding: 100px 0;
+    background: #fff;
+}
+
+section.call-up {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.call-up-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.22);
+    background: #fff;
+}
+
+.call-up-box ion-icon {
+    font-size: 5em;
+    color: var(--primary);
+}
+
+.call-up-box h4 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.call-up-box p {
+    font-weight: 300;
+}
+
+
+
+
