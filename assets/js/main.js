@@ -21,3 +21,25 @@ function resetBanner() {
     banner.className = 'banner';
     toggleResetBtn();
 }
+
+
+const selectHeader = document.querySelector('#header');
+const backToTop = document.querySelector('.back-to-top');
+if (selectHeader) {
+    const headerScrolled = () => {
+        if (window.scrollY > 100) {
+            selectHeader.classList.add('header-scrolled');
+            backToTop.classList.add('active');
+        } else {
+            selectHeader.classList.remove('header-scrolled');
+            backToTop.classList.remove('active');
+        }
+    }
+
+    window.addEventListener('load', headerScrolled);
+    document.addEventListener('scroll', headerScrolled);
+}
+
+function srollToTop() {
+    window.scrollTo(0, 0);
+}
